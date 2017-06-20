@@ -1,7 +1,7 @@
 {
   "name": "aws-iot-device-sdk",
-  "description": "AWS IoT Node.js SDK for Embedded Devices",
-  "version": "1.0.14",
+  "description": "AWS IoT Node.js SDK for Embedded Devices - forked to work with webpack",
+  "version": "1.0.14.1",
   "author": {
     "name": "Amazon Web Services",
     "email": "",
@@ -50,5 +50,10 @@
     "test": "node ./node_modules/gulp/bin/gulp.js test --verbose",
     "browserize": "./scripts/browserize.sh",
     "beautify": "node ./node_modules/gulp/bin/gulp.js beautify"
+  },
+  "browser":{
+    "fs": false,
+    "tls": false,
+    "net": false
   }
 }
